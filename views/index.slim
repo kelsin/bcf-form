@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title Book Club Fiction
+  body
+    h1 Book Club Fiction
+    form method="post"
+      fieldset
+        legend 1st Book
+        ul
+          li
+            label for="title1" Title
+            input name="title1" id="title1" type="text" value=params[:title1]
+          li
+            label for="link1" Link
+            input name="link1" id="link1" type="text" value=params[:link1]
+          li
+            label for="image1" Image URL
+            input name="image1" id="image1" type="text" value=params[:image1]
+          li
+            label for="note1" Note
+            input name="note1" id="note1" type="text" value=params[:note1]
+          li
+            label for="date1" Date
+            input name="date1" id="date1" type="text" value=params[:date1]
+      fieldset
+        legend 2nd Book
+        ul
+          li
+            label for="title2" Title
+            input name="title2" id="title2" type="text" value=params[:title2]
+          li
+            label for="link2" Link
+            input name="link2" id="link2" type="text" value=params[:link2]
+          li
+            label for="image2" Image URL
+            input name="image2" id="image2" type="text" value=params[:image2]
+          li
+            label for="note2" Note
+            input name="note2" id="note2" type="text" value=params[:note2]
+          li
+            label for="date2" Date
+            input name="date2" id="date2" type="text" value=params[:date2]
+      input type="submit" value="Render"
